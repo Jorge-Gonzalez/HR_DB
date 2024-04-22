@@ -1,7 +1,14 @@
+CREATE TABLE regions (
+    region_id SERIAL PRIMARY KEY,
+    region_name CHARACTER VARYING(25)
+);
+
 CREATE TABLE countries (
     country_id CHAR(2) PRIMARY KEY,
     country_name VARCHAR(40),
-    region_id INT NOT NULL
+    region_id INT NOT NULL,
+    FOREIGN KEY (region_id) REFERENCES regions (region_id)
+    ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE locations (
@@ -21,6 +28,13 @@ CREATE TABLE departments (
     location_id INT,
     FOREIGN KEY (location_id) REFERENCES locations (location_id)
     ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE jobs (
+    job_id SERIAL PRIMARY KEY,
+    job_title VARCHAR(35) NOT NULL,
+    min_salary NUMERIC(8, 2),
+    max_salary NUMERIC(8, 2)
 );
 
 CREATE TABLE employees (
