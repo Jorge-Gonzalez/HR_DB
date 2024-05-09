@@ -7,7 +7,7 @@ find "sql_commands/" -name "*.sql" -type f | while read -r sql_file; do
   # Run the sql script and save the query results.
 
   filename=$(basename -s .sql -- "$sql_file")
-  results_file=markdown/"$filename".txt
+  results_file=../content/blog/"$filename".txt
   psql -h localhost -d HR1 -U admin -f "$sql_file" -o "$results_file" -F\|
     
   # Format the query results to conform to the markdown table.
@@ -19,7 +19,7 @@ find "sql_commands/" -name "*.sql" -type f | while read -r sql_file; do
   
   # Create a markdown file and add the front matter
   
-  markdown_file=markdown/"$filename".md
+  markdown_file=../content/blog/"$filename".md
   sed -n '/file: '"$filename"'/,/---/p' front_matter/pages_front_matter.yaml |
     sed '1c\---' |
     sed '$a\\n' > "$markdown_file"
