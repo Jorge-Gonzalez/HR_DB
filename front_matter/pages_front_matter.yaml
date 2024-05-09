@@ -1,0 +1,346 @@
+---
+file: select
+title: SELECT
+description: Query data from a table.
+tags:
+  - statement
+  - querying data
+---
+file: order_by
+title: ORDER BY
+description: Sort the results by one or more columns, either ascending or descending.
+tags:
+  - clause
+  - sorting data
+---
+file: distinct
+title: DISTINCT
+description: Delete duplicates from the result set.
+tags:
+  - filter data
+  - operator
+---
+file: limit
+title: LIMIT
+description: Limit the number of rows that a query returns in conjunction with the OFFSET clause
+tags:
+  - filter data
+  - clause
+---
+file: fetch
+title: FETCH
+description: Returns the results in partial chunks of data one at a time instead of the hole result.
+tags:
+  - filter data
+  - clause
+---
+file: where_clause
+title: WHERE Clause
+description: Filter data according to specified conditions.
+tags:
+  - filter data
+  - clause
+---
+file: comparison_operators
+title: Comparison Operators
+description: The WHERE clause can filter data using comparison operators such as greater than, greater than or equal, less than, less than or equal, equal, and not equal.
+tags:
+  - filter data
+  - operators
+---
+file: logical_operators
+title: Logical Operators
+description: Enable the combination or chaining of conditions.
+tags:
+  - filter data
+  - operators
+---
+file: and_operator
+title: AND Operator
+description: Yields true if the two operands are true.
+tags:
+  - filter data
+  - operators
+---
+file: or_operator
+title: OR operator
+description: Yields true if one of the operands is true.
+tags:
+  - filter data
+  - operators
+---
+file: between_operator
+title: BETWEEN Operator
+description: Select data within a range of values.
+tags:
+  - filter data
+  - operators
+---
+file: in_operator
+title: IN Operator
+description: Verify if a value is in the list of values.
+tags:
+  - filter data
+  - operators
+---
+file: like_operator
+title: LIKE Operator
+description: Filter data based on a specified character's pattern in a column.
+tags:
+  - filter data
+  - operators
+---
+file: is_null_operator
+title: IS NULL Operator
+description: Determine if an expression is NULL.
+tags:
+  - filter data
+  - operators
+---
+file: not_operator
+title: NOT Operator
+description: Yields true if the operand is false.
+tags:
+  - filter data
+  - operators
+---
+file: case_expression
+title: CASE Expression
+description: Add if-then-else logic to the SQL statements.
+tags:
+  - conditional expressions
+---
+file: sql_aliases
+title: SQL Aliases
+description: Create a shorter name for the three-part name of a table or view.
+tags:
+  - joining tables
+---
+file: inner_join
+title: INNER JOIN
+description: Bring only the rows that match the join conditions for each specified table.
+tags:
+  - joining tables
+---
+file: left_outer_join
+title: LEFT OUTER JOIN
+description: Select rows from the left table even when there is no match on the right table.
+tags:
+  - joining tables
+---
+file: full_outer_join
+title: FULL OUTER JOIN
+description: Include rows form both tables, filling with null the missing values.
+tags:
+  - joining tables
+---
+file: self_join
+title: SELF JOIN
+description: join a table to itself with INNER JOIN or LEFT JOIN.
+tags:
+  - joining tables
+---
+file: aggregate_functions
+title: Aggregate functions
+description: Produces a single vale from a set of values.
+tags:
+  - aggregate functions
+---
+file: avg
+title: AVG
+description: Calculate the average value of a set.
+tags:
+  - aggregate functions
+---
+file: count
+title: COUNT
+description: return the number of items in a set.
+tags:
+  - aggregate functions
+---
+file: sum
+title: SUM
+description: return the sum of all or distinct items of a set.
+tags:
+  - aggregate functions
+---
+file: max
+title: MAX
+description: find the maximum value in a set.
+tags:
+  - aggregate functions
+---
+file: min
+title: MIN
+description: find the minimum value in a set.
+tags:
+  - aggregate functions
+---
+file: group_by
+title: GROUP BY
+description: combine rows into groups and apply an aggregate function to each group.
+tags:
+  - grouping data
+---
+file: having
+title: HAVING
+description: specify a condition for filtering groups summarized by the GROUP BY clause.
+tags:
+  - grouping data
+---
+file: grouping_sets
+title: GROUPING SETS
+description: generate multiple grouping sets.
+tags:
+  - grouping data
+---
+file: rollup
+title: ROLLUP
+description: generate multiple grouping sets considering the hierarchy of the input columns.
+tags:
+  - grouping data
+---
+file: cube
+title: CUBE
+description: generate multiple grouping sets for all possible combination of the input columns.
+tags:
+  - grouping data
+---
+file: union_and_union_all
+title: UNION and UNION ALL
+description: combine result sets of two or more queries into a single result set.
+tags:
+  - set operators
+---
+file: intersect 
+title: INTERSECT 
+description: return the intersection of two or more queries.
+tags:
+  - set operators
+---
+file: minus
+title: MINUS
+description: subtract a result set from another result set.
+tags:
+  - set operators
+---
+file: subquery
+title: Subquery
+description: Narrow a condition based on data in an temporary table.
+tags:
+  - subquery
+  - predicate
+---
+file: correlated_subquery
+title: Correlated Subquery
+description: Subquery that is revaluated as per row basis.
+tags:
+  - subquery
+  - predicate
+---
+file: exists
+title: EXISTS
+description: Check for the existence of the specified row returned from a subquery.
+tags:
+  - subquery
+  - predicate
+---
+file: all
+title: ALL
+description: Returns true if all values meet the specified condition.
+tags:
+  - subquery
+  - predicate
+---
+file: any
+title: ANY
+description: Returns true if at least one value meet the specified condition.
+tags:
+  - subquery
+  - predicate
+---
+file: insert
+title: INSERT
+description: insert one or more rows into a table.
+tags:
+  - modifying data
+---
+file: update
+title: UPDATE
+description: update existing data in a table.
+tags:
+  - modifying data
+---
+file: delete
+title: DELETE
+description: delete data from a table permanently.
+tags:
+  - modifying data
+---
+file: create_table
+title: CREATE TABLE
+description: create a new table in the database.
+tags:
+  - table structure
+---
+file: alter_table
+title: ALTER TABLE
+description: modify the structure of an existing table.
+tags:
+  - table structure
+---
+file: drop_table
+title: DROP TABLE
+description: remove the tables permanently.
+tags:
+  - table structure
+---
+file: truncate_table
+title: TRUNCATE TABLE
+description: delete all data in a big table fast and efficiently.
+tags:
+  - table structure
+---
+file: primary_key
+title: PRIMARY KEY
+description: show you how to define a primary key for a table.
+tags:
+  - constraints
+---
+file: foreign_key
+title: FOREIGN KEY
+description: Creates the relationship between data in two tables.
+tags:
+  - constraints
+---
+file: unique
+title: UNIQUE
+description: Ensure the uniqueness of values in a column or a set of columns.
+tags:
+  - constraints
+---
+file: not_null 
+title: NOT NULL 
+description: Prevent the values inserted into or updated to a column from being NULL.
+tags:
+  - constraints
+---
+file: check
+title: CHECK
+description: Validate data before it is stored in one or more columns based on a Boolean expression.
+tags:
+  - constraints
+---
+file: trigger
+title: TRIGGER
+description: A trigger is a piece of code executed automatically in response to a specific event occurred on a table in the database.
+tags:
+  - modyfying data
+  - events
+---
+file: view
+title: VIEW
+description: A view is like a virtual table produced by executing a query, it allows to store complex queries.
+tags:
+  - querying data
+---
