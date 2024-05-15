@@ -1,5 +1,7 @@
 -- The full outer join includes all rows from the joined tables.
 -- To illustrate this lets create two new tables: baskets and fruits.
+DROP TABLE IF EXISTS fruits;
+DROP TABLE IF EXISTS baskets;
 CREATE TABLE fruits (
     fruit_id INTEGER PRIMARY KEY,
     fruit_name VARCHAR(255) NOT NULL,

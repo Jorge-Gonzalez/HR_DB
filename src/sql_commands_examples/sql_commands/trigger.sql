@@ -4,6 +4,7 @@
 -- DROP FUNCTION IF EXISTS LOG_SALARY_CHANGES() CASCADE;
 --
 -- Create a new table called salary_changes.
+DROP TABLE IF EXISTS salary_changes;
 CREATE TABLE salary_changes (
     employee_id INT,
     changed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

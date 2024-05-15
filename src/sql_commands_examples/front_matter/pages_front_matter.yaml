@@ -140,6 +140,12 @@ description: join a table to itself with INNER JOIN or LEFT JOIN.
 tags:
   - joining tables
 ---
+file: cross_join
+title: CROSS JOIN
+description: A cross join is a join operation that produces the Cartesian product of two or more tables.
+tags:
+  - joining tables
+---
 file: aggregate_functions
 title: Aggregate functions
 description: Produces a single vale from a set of values.
